@@ -4,6 +4,7 @@ from aiogram.types import Message
 from tg_bot.filters import IsAdmin
 from tg_bot.lexicon import lexicon
 
+
 router = Router()
 router.message.filter(IsAdmin())
 
