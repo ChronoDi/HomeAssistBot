@@ -18,7 +18,7 @@ environs==9.5.0
 exceptiongroup==1.1.2
 frozenlist==1.3.3
 greenlet==2.0.2
-homeassistant-api==4.1.1.post2
+homeassistant-api
 idna==3.4
 itsdangerous==2.1.2
 lexicon==2.0.1
