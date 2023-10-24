@@ -139,7 +139,7 @@ List of relations
  public | rooms_id_seq    | sequence | <user_name>
 ````
 
-15. Перейдите в папку /etc/systemd/system/ и создайте там файл TransmissionBot.service
+15. Перейдите в папку /etc/systemd/system/ и создайте там файл HomeAssistBot.service
 ```bash
 cd /etc/systemd/system/
 sudo nano HomeAssistBot.service
