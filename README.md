@@ -155,7 +155,7 @@ After=network.target
 [Service]
 Type=simple
 User=<ваше имя пользователя>
-WorkingDirectory=/home/<ваше имя пользователя>/TransmissionBot
+WorkingDirectory=/home/<ваше имя пользователя>/HomeAssistBot
 ExecStart=/home/<ваше имя пользователя>/HomeAssistBot/venv/bin/python3.10 /home/<ваше имя пользователя>/HomeAssistBot/app.py
 Restart=always
 
