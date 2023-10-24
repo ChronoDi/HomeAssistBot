@@ -172,12 +172,12 @@ sudo systemctl start HomeAssistBot.service
 ```
 18. Если нужно остановить скрипт:
 ```bash
-sudo systemctl stop TransmissionBot.service
+sudo systemctl stop HomeAssistBot.service
 ```
 
 19. Посмотреть статус сервиса бота:
 ```bash
-sudo systemctl status TransmissionBot.service
+sudo systemctl status HomeAssistBot.service
 ```
 
 
