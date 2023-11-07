@@ -1,0 +1,28 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_HOST=${DB_HOST}
+      - POSTGRES_PORT=${DB_PORT}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    volumes:
+      - ./data:/var/lib/postgresql/data
+
+  redis:
+    image: redis
+    environment:
+      - REDIS_HOST=${REDIS_HOST}
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    command: python app.py
+    depends_on:
+      - db
+      - redis
