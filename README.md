@@ -139,7 +139,7 @@ List of relations
  public | rooms_id_seq    | sequence | <user_name>
 ````
 
-15. Перейдите в папку /etc/systemd/system/ и создайте там файл TransmissionBot.service
+15. Перейдите в папку /etc/systemd/system/ и создайте там файл HomeAssistBot.service
 ```bash
 cd /etc/systemd/system/
 sudo nano HomeAssistBot.service
@@ -155,7 +155,7 @@ After=network.target
 [Service]
 Type=simple
 User=<ваше имя пользователя>
-WorkingDirectory=/home/<ваше имя пользователя>/TransmissionBot
+WorkingDirectory=/home/<ваше имя пользователя>/HomeAssistBot
 ExecStart=/home/<ваше имя пользователя>/HomeAssistBot/venv/bin/python3.10 /home/<ваше имя пользователя>/HomeAssistBot/app.py
 Restart=always
 
@@ -172,12 +172,12 @@ sudo systemctl start HomeAssistBot.service
 ```
 18. Если нужно остановить скрипт:
 ```bash
-sudo systemctl stop TransmissionBot.service
+sudo systemctl stop HomeAssistBot.service
 ```
 
 19. Посмотреть статус сервиса бота:
 ```bash
-sudo systemctl status TransmissionBot.service
+sudo systemctl status HomeAssistBot.service
 ```
 
 
