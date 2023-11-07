@@ -16,6 +16,8 @@ services:
     image: redis
     environment:
       - REDIS_HOST=${REDIS_HOST}
+    ports:
+      - "6379:6379"
 
   app:
     build:
